@@ -1,0 +1,3 @@
+[submodule "steam_skins/metro-for-steam-4.4/UPMetroSkin"]
+	path = steam_skins/metro-for-steam-4.4/UPMetroSkin
+	url = https://github.com/redsigma/UPMetroSkin.git
