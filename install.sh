@@ -90,8 +90,8 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git
 git clone https://github.com/zsh-users/zsh-autosuggestions 
 #echo "source ~/.zsh-plugs/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
-## zsh-vi-mode (my fork to fix syntax highlighting by fbearoff)
-git clone https://github.com/croakFrog/zsh-vi-mode
+## zsh-vi-mode (fix syntax highlighting fork by fbearoff)
+git clone https://github.com/fbearoff/zsh-vi-mode.git
 #echo "source ~/.zsh-plugs/zsh-vi-mode/zsh-vi-mode.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
 ## syntax highlighting
