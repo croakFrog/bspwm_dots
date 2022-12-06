@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+echo "blocks1"
+echo "colorbars"
+echo "ghosts"
+echo "hex-block"
+echo "panes"
+echo "pukeskull"
+echo "colorblocks"

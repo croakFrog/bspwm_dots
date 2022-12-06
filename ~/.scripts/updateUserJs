@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+PROFILE=$(ls ~/.var/app/org.mozilla.firefox/.mozilla/firefox/ | grep main)
+~/.var/app/org.mozilla.firefox/.mozilla/firefox/$PROFILE/updater.sh

@@ -1,0 +1,37 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+pgrep bspswallow || bspswallow &
+feh --randomize --bg-scale --no-fehbg ~/Pictures/Anime_Dark &
+polybar &
+dunst &
+redshift -l 24:121 -t 6500:3200 &
+picom --animations --experimental-backend --config ~/.config/picom.conf --xrender-sync-fence &
+setxkbmap -option grp:win_space_toggle us,es &
+udiskie -A -n -T &
+dunstify -a "dunstIgnore" "Welcome back!" &
+
+bspc monitor -d I II III IV V VI VII
+bspc config border_width         2
+bspc config window_gap           5
+
+bspc config split_ratio          0.53
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config focus_follows_pointer true
+bspc config paddingless_monocle true
+bspc config single_monocle false
+bspc config active_border_color \#1C2325
+ 
+bspc rule -a Gimp state=floating follow=on
+bspc rule -a Screenkey manage=off
+bspc rule -a Lxappearance state=floating
+bspc rule -a obs state=floating
+bspc rule -a bottles state=floating
+bspc rule -a fl64.exe state=floating
+bspc rule -a resolve state=floating
+bspc rule -a fceux state=floating
+bspc rule -a '*:*:Picture in picture' state=floating
+bspc rule -a '*:*:Picture-in-Picture' state=floating
+
+bluetooth off

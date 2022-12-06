@@ -1,0 +1,10 @@
+/* colors */
+
+* {
+  al:   #00000000;
+  bg:   #0b0f10;
+  bga:  #8080804C;
+  fg:   #c5c8c9;
+  ac:   #80808066;
+  font-family: "JetBrains Mono Nerd Font Mono";
+}

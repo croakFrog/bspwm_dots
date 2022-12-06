@@ -1,0 +1,4 @@
+#!/bin/bash
+SONG="$(mpc current)"
+dunstify -a "dunstIgnore" " Now playing" "$SONG"
+

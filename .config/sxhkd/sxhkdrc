@@ -1,0 +1,213 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+	kitty
+
+# program launcher
+alt + space
+	rofi -show drun
+
+super + c
+	rofi -show run
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd; dunstify -a "dunstIgnore" -u low -t 2000 -r 90210 "sxhkd" "Restarted hotkeys.";paplay /usr/share/sounds/freedesktop/stereo/dialog-warning.oga
+
+# open powermenu
+super + shift + 0
+	~/.config/polybar/scripts/powermenu.sh
+
+# task manager
+ctrl + Escape
+	kitty -e btop
+
+#
+# bspwm hotkeys
+#
+
+# quit/restart bspwm
+super + alt + {q,r}
+	bspc {quit,wm -r}
+
+# close and kill
+super + {_,shift + }x
+	bspc node -{c,k}
+
+# alternate between the tiled and monocle layout
+super + m
+	bspc desktop -l next
+
+# send the newest marked node to the newest preselected node
+super + y
+	bspc node newest.marked.local -n newest.!automatic.local
+
+#
+# state/flags
+#
+
+# set the window state
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# set the node flags
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+#
+# focus/swap
+#
+
+# focus the node in the given direction
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus the next/previous window in the current desktop
+alt + Tab
+	bspc node -f next.local.!hidden.window
+
+alt + shift + Tab
+	bspc node -f prev.local.!hidden.window
+
+# focus the next/previous desktop in the current monitor
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+# focus the last node/desktop
+super + {grave,Tab}
+	bspc {node,desktop} -f last
+
+# focus or send to the given desktop
+# super + {_,shift + }{1-9,0}
+# 	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# send the window to a different workspace and switch to that
+super + shift + {q,w,e,r}
+    id=$(bspc query -N -n); bspc node -d ^{1-4}; bspc node -f ${id}
+
+# same thing as above, but left or right
+super + shift + ctrl + {h,l}
+    bspc node -d {prev,next}; bspc node -f {next,prev}
+
+# switch to a workspace
+alt + shift + {q,w,e,r}
+	bspc desktop -f { I,II,III,IV }
+#
+# preselect
+#
+
+# preselect the direction
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+#
+# move/resize
+#
+
+# expand a window by moving one of its side outward
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+#
+# applications
+#
+
+# thunderbird
+super + v
+	thunderbird
+
+# file managers
+super + e
+	thunar
+	
+super + alt + e
+	kitty -e vifm
+
+# calendar
+super + alt + c
+	kitty -e calcurse
+	
+# browsers
+super + r
+	flatpak run org.mozilla.firefox
+
+super + shift + v
+	flatpak run com.brave.Browser
+
+#
+# screenshot
+#
+
+# manual
+alt + ctrl + s
+	flameshot gui -p /media/P1/Fotos
+	
+# full
+Print
+	flameshot full -p /media/P1/Fotos
+
+#
+# media
+#
+
+## MEDIA - MPD
+# Pause/Resume MPD playback (using Pause/Break)
+Pause
+   mpc toggle
+
+## Next song (xev shows pagedown as Next)
+super + Next
+    mpc next
+
+## Previous song (xev shows pageup as Prior)
+super + Prior
+    mpc prev
+
+# system options
+
+## Brightness
+super + 0
+	brightnessctl s 10%+; dunstify -a "dunstIgnore" -u low -t 1000 -r 90210 " $(printf $(brightnessctl g))"
+super + 9  
+	brightnessctl s 10%-; dunstify -a "dunstIgnore" -u low -t 1000 -r 90210 " $(printf $(brightnessctl g))"
+ 
+## Volume
+super + {8,7}
+	amixer -q sset Master 5%{+,-}; dunstify -a "dunstIgnore" -u low -t 1000 -r 90210 -h int:value:"$(print $(amixer -c 0 get Master | tail -1 | awk '\{print $4\}' | sed 's/[^0-9]*//g'))" "墳 Volume $(print $(amixer -c 0 get Master | tail -1 | awk '\{print $4\}' | sed 's/[^0-9%]*//g'))";paplay /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga
+
+## Microphone
+super + shift + {8,7}
+	amixer -q set Capture 5%{+,-}; dunstify -a "dunstIgnore" -u low -t 1000 -r 90210 -h int:value:"$(print $(amixer | tail -1 | awk '\{print $5\}' | sed 's/[^0-9%]*//g'))" " Microphone $(print $(amixer | tail -1 | awk '\{print $5\}' | sed 's/[^0-9%]*//g'))";paplay /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga
+
+super + 6
+	amixer -q sset Master toggle; dunstify -a "dunstIgnore" -u low -t 1000 -r 90210 "Sound Toggle" "墳 $(print $(amixer -c 0 get Master | tail -1 | awk '\{print $6\}' | sed 's/[^a-z]*//g'))"
+
+## Xkeyboard Notif
+super + space
+	dunstify -a "dunstIgnore" -u low -t 1000 -r 90210 "Keyboard layout changed.";paplay /usr/share/sounds/freedesktop/stereo/dialog-warning.oga
+
+## Network
+super + shift + i
+	bash ~/.config/polybar/scripts/rofi-network-manager/rofi-network-manager.sh
+
+## Notifications Center
+ctrl + grave
+	dunstctl history-pop;dunstctl history-pop;dunstctl history-pop;dunstctl history-pop;dunstctl history-pop #lol i know
+
+ctrl + space
+	dunstctl close-all
