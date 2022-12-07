@@ -155,11 +155,11 @@ super + shift + v
 
 # manual
 alt + ctrl + s
-	flameshot gui -p /media/P1/Fotos
+	flameshot gui -p /media/P1/Fotos/Screenshots
 	
 # full
 Print
-	flameshot full -p /media/P1/Fotos
+	flameshot full -p /media/P1/Fotos/Screenshots
 
 #
 # media

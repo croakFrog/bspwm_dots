@@ -174,7 +174,7 @@ command! FZFfind :
 " program.
 
 " Pdf
-filextype {*.pdf},<application/pdf> okular %f &, libreoffice --draw %f
+filextype {*.pdf},<application/pdf> mupdf %f &, libreoffice --draw %f
 fileviewer {*.pdf},<application/pdf> pdftotext -nopgbrk %c -
 
 " PostScript
@@ -439,7 +439,7 @@ nnoremap T :!thunar<cr>
 nnoremap b :bmarks<cr>
 
 " Quick bmarks
-nnoremap .exam :bmarks bpexamples<cr>l
+nnoremap .exam :bmarks examples<cr>l
 nnoremap .conf :bmarks config<cr>l
 nnoremap .bspw :bmarks bspwm<cr>l
 nnoremap .hotk :bmarks hotkeys<cr>l
@@ -447,7 +447,7 @@ nnoremap .vids :bmarks Videos<cr>l
 nnoremap .dotf :bmarks dotfiles<cr>l
 nnoremap .desc :bmarks Descargas<cr>l
 nnoremap .vifm :bmarks vifm<cr>l
-nnoremap .rdmc :bmarks rdmclones<cr>l
+nnoremap .rdmc :bmarks .rdmclones<cr>l
 nnoremap .scrp :bmarks scripts<cr>l
 nnoremap .cd :cd<cr>
 

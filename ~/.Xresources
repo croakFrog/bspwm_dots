@@ -41,7 +41,7 @@
 xterm.vt100.termName: xterm-256color
 xterm.vt100.scaleHeight: 1.0
 XTerm.vt100.geometry: 80x32
-xterm.vt100.internalBorder: 44
+xterm.vt100.internalBorder: 30
 xterm.vt100.borderWidth: 0
 ! Every shell is a login shell by default (for inclusion of all necessary environment variables)
 XTerm*loginshell: true

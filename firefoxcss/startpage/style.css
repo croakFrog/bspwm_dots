@@ -9,7 +9,7 @@
 html, body {
   background: var(--color-bg);
   color: var(--color-fg);
-  font-family: "JetBrains Mono Nerd Font", monospace;
+  font-family: "JetBrains Mono Nerd Font Mono", monospace;
   height: 100%;
   width: 100%;
   margin: 0;

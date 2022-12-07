@@ -65,8 +65,8 @@ alias gcl="git clone"
 alias rgcl="cd ~/.rdmclones;git clone"
 
 # BOOKMARKS
-alias cdbpgit="cd ~/botpress-folder/data/assets/modules/channel-web/examples"
-alias cdbp="cd ~/botpress-folder;./bp" #pg_ctl -D data stop; pg_ctl -D mydbuddydump -l logfile start
+alias cdbpgit="cd /media/P1/botpress-folder-bak/botpress-main-files/botpress/data/assets/modules/channel-web/examples/"
+alias cdbp="cd /media/P1/botpress-folder-bak/botpress-main-files/botpress/;./bp" #pg_ctl -D data stop; pg_ctl -D mydbuddydump -l logfile start
 alias cdconf="cd; cd ~/.config"
 alias synchtd="sudo rm -rf /srv/www/htdocs/examples;sudo cp -r ~/botpress-folder/data/assets/modules/channel-web/examples /srv/www/htdocs"
 

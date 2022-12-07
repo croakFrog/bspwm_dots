@@ -13,10 +13,11 @@ sudo plymouth-set-default-theme -R bgrt
 
 # Install Apps
 # removed -y flag because it doesn't work on this command for some reason
-sudo zypper in ark gwenview gimp thunderbird clamtk bleachbit flameshot virt-manager musescore qbittorrent steam tor syncthing flatpak neofetch VirtualGL git pavucontrol skanlite kitty vifm cbonsai imagewriter zsh vim vim-data ImageMagick opi firewalld gpick darktable font-manager rofi thunar polybar brightnessctl dunst i3lock canberra-gtk-play redshift lxappearance qrencode man sxhkd feh kitty xclip lsd udiskie udisks2 usbutils inkscape nmcli-dmenu neovim btop macchanger bspwm sound-theme-freedesktop ncmpcpp mpd calcurse fzf npm vlc libreoffice
+sudo zypper in ark gwenview gimp thunderbird clamtk bleachbit flameshot virt-manager musescore qbittorrent steam tor syncthing flatpak neofetch VirtualGL git pavucontrol skanlite kitty vifm cbonsai imagewriter zsh vim vim-data ImageMagick opi firewalld gpick darktable font-manager rofi thunar polybar brightnessctl dunst i3lock canberra-gtk-play redshift lxappearance qrencode man sxhkd feh kitty xclip lsd udiskie udisks2 usbutils inkscape nmcli-dmenu neovim btop macchanger bspwm sound-theme-freedesktop ncmpcpp mpd calcurse fzf npm vlc libreoffice libreoffice-draw libreoffice-gtk3 tumbler cava xdg-desktop-portal-gtk
 
 # OBS apps
-opi cmatrix fceux dialect
+opi cmatrix
+opi fceux
 
 # fix for Davinci Resolve audio
 sudo zypper in -y alsa-plugins-pulse
@@ -73,7 +74,8 @@ cp fonts/JetBrains\ Mono\ Regular\ Nerd\ Font\ Complete\ Mono.ttf $HOME/.fonts
 
 # Jetbrains Mono, Poppins
 # INSTALL JETBRAINS MONO NF FROM FONTS FOLDER
-sudo zypper in -y jetbrains-mono-fonts google-poppins-fonts
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
+sudo zypper in -y google-poppins-fonts
 
 # Microsoft fonts (OPTIONAL)
 sudo zypper in -y fetchmsttfonts
