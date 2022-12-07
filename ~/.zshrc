@@ -11,7 +11,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-vi-mode)
 
-export LANG=es_ES.UTF-8
+# export LANG=es_ES.UTF-8
 
 # COSMETIC ALIASES
 alias fetch="clear;neofetch --backend kitty --source ~/.config/neofetch/kirbysleep.png --size 250"
