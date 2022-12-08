@@ -364,6 +364,12 @@ filextype *.pro qtcreator %f &
 filextype */
         \ {View in thunar}
         \ Thunar %f &,
+    
+" Font files
+filextype {*.ttf,*.otf},<application/fonts> font-manager %f,
+
+" Jupyter Notebook
+filextype {*.ipynb},<application/jupyter> flatpak run com.vscodium.codium %f,
 
 " Syntax highlighting in preview
 "
