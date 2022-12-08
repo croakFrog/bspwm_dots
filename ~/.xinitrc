@@ -16,6 +16,7 @@ xsetroot -cursor_name left_ptr
 
 # Set environment variables.
 export EDITOR=nvim
+export TERMINAL=kitty
 
 # Start the window manager.
 export XCURSOR_SIZE=16

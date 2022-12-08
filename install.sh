@@ -141,7 +141,7 @@ sudo ninja -C build install
 # flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-flatpak install flathub com.sindresorhus.Caprine org.onlyoffice.desktopeditors org.signal.Signal com.brave.Browser com.bitwarden.desktop com.usebottles.bottles com.vscodium.codium net.cozic.joplin_desktop io.freetubeapp.FreeTube org.mozilla.firefox flatseal flatpak install flathub com.obsproject.Studio
+flatpak install flathub com.sindresorhus.Caprine org.onlyoffice.desktopeditors org.signal.Signal com.brave.Browser com.bitwarden.desktop com.usebottles.bottles com.vscodium.codium net.cozic.joplin_desktop io.freetubeapp.FreeTube org.mozilla.firefox flatseal flatpak install flathub com.obsproject.Studio io.dbeaver.DBeaverCommunity
 
 sudo flatpak override --filesystem=$HOME/.themes
 sudo flatpak override --env=GTK_THEME=Colloid-Dark 
