@@ -9,7 +9,7 @@
 html, body {
   background: var(--color-bg);
   color: var(--color-fg);
-  font-family: "JetBrains Mono Nerd Font Mono", monospace;
+  font-family: "JetBrainsMono Nerd Font Mono", monospace;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -82,7 +82,7 @@ html, body {
   color: #c9c9c9;
   font-size: 1.5vh;
   padding-top: 1.5vh;
-  font-family: "JetBrains Mono Nerd Font", monospace;
+  font-family: "JetBrainsMono Nerd Font", monospace;
 }
 
 .links {
