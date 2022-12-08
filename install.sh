@@ -11,6 +11,10 @@ sudo zypper rr skype-stable
 # enable theme for LUKS
 sudo plymouth-set-default-theme -R bgrt
 
+# add upstream to rofi-network-manager fork
+cd .config/polybar/scripts/rofi-network-manager
+git remote add upstream https://github.com/P3rf/rofi-network-manager.git
+
 # Install Apps
 # removed -y flag because it doesn't work on this command for some reason
 sudo zypper in ark gwenview gimp thunderbird clamtk bleachbit flameshot virt-manager musescore qbittorrent steam tor syncthing flatpak neofetch VirtualGL git pavucontrol skanlite kitty vifm cbonsai imagewriter zsh vim vim-data ImageMagick opi firewalld gpick darktable font-manager rofi thunar polybar brightnessctl dunst i3lock canberra-gtk-play redshift lxappearance qrencode man sxhkd feh kitty xclip lsd udiskie udisks2 usbutils inkscape nmcli-dmenu neovim btop macchanger bspwm sound-theme-freedesktop ncmpcpp mpd calcurse fzf npm vlc libreoffice libreoffice-draw libreoffice-gtk3 tumbler cava xdg-desktop-portal-gtk
@@ -59,17 +63,13 @@ ln -s -r .config/nvim/lua/user/init.lua ~/.config/nvim/lua/user/
 # REMOVES NVIM.BAK symlink
 rm -r ~/.config/nvim.bak
 
-# DAVINCI RESOLVE
-# fix for Davinci Resolve audio
-sudo zypper in -y alsa-plugins-pulse
-
 # FONTS
 # DeJavu Wifi Ramp
 git clone https://github.com/isaif/polybar-wifi-ramp-icons.git ~/.rdmclones/Dejavu
 mkdir ~/.fonts
 cp ~/.rdmclones/Dejavu/DejaVuSansMono-wifi-ramp.ttf ~/.fonts
 
-# JetBrains Mono NF
+# JetBrainsMono Nerd Font Mono
 cp fonts/JetBrains\ Mono\ Regular\ Nerd\ Font\ Complete\ Mono.ttf $HOME/.fonts
 
 # Jetbrains Mono, Poppins
@@ -138,7 +138,7 @@ sudo ninja -C build install
 # meson setup --wipe . build
 # ninja -C build install
 
-# flatpak
+# flatpak (might take a while to install everything, grab a coffee while this is going)
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 flatpak install flathub com.sindresorhus.Caprine org.onlyoffice.desktopeditors org.signal.Signal com.brave.Browser com.bitwarden.desktop com.usebottles.bottles com.vscodium.codium net.cozic.joplin_desktop io.freetubeapp.FreeTube org.mozilla.firefox flatseal flatpak install flathub com.obsproject.Studio io.dbeaver.DBeaverCommunity
