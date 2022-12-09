@@ -69,7 +69,7 @@ xterm.vt100.translations: #override \n\
     Shift Ctrl <KeyPress> c:select-set(CLIPBOARD)
 
 XTerm*faceSize: 13
-xterm.vt100.faceName: monospace
+xterm.vt100.faceName: JetBrainsMono Nerd Font Mono:size=13:antialias=false
 xterm*font: JetBrains Mono
 
 ! stop output to terminal from jumping down to bottom of scroll again
