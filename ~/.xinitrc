@@ -10,6 +10,7 @@ fi
 # Change cursor theme size.
 xrandr
 xrdb -merge ~/.Xresources
+xrdb -merge ~/.Xdefaults
 
 # Fix the x-shaped cursor on root window.
 xsetroot -cursor_name left_ptr

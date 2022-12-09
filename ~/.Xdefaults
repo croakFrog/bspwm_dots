@@ -1,0 +1,37 @@
+ ! special
+ *xterm*foreground:   #c5c8c9
+ *xterm*background:   #0B0F10
+ *xterm*cursorColor:      #cccfd8
+
+ ! black
+ *xterm*color0:       #2A2F39
+ *xterm*color8:       #40454f
+
+ ! red
+ *xterm*color9:       #ec5f67
+ *xterm*color1:       #ff7c81
+
+ ! green
+ *xterm*color2:       #89b06d
+ *xterm*color10:      #a3cb86
+
+ ! yellow
+ *xterm*color3:       #ebae34
+ *xterm*color11:      #ffc84f
+
+ ! blue
+ *xterm*color4:       #039be5
+ *xterm*color12:      #41b4ff
+
+ ! magenta
+ *xterm*color5:       #c678dd
+ *xterm*color13:      #e393fa
+
+ ! cyan
+ *xterm*color6:       #56b6c2
+ *xterm*color14:      #74d3df
+
+ ! white
+ *xterm*color7:       #afb2bb
+ *xterm*color15:      #cccfd8
+
