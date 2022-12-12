@@ -1,4 +1,4 @@
-; thunar GtkAccelMap rc-file         -*- scheme -*-
+; Thunar GtkAccelMap rc-file         -*- scheme -*-
 ; this file is an automated accelerator map dump
 ;
 ; (gtk_accel_path "<Actions>/ThunarBookmarks/6e59012685504e2dc4d63081ad2dfae1" "")
@@ -40,6 +40,7 @@
 ; (gtk_accel_path "<Actions>/ThunarBookmarks/a06325e764935dc4aff5a1a97e64fbf4" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/create-document" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/close-tab" "<Primary>w")
+; (gtk_accel_path "<Actions>/ThunarStandardView/sort-by-type" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/view-side-pane-tree" "<Primary>e")
 ; (gtk_accel_path "<Actions>/ThunarShortcutsPane/sendto-shortcuts" "")
 ; (gtk_accel_path "<Actions>/ThunarBookmarks/f3d1ace04a24405ba3651741bec95d97" "")
@@ -64,7 +65,7 @@
 ; (gtk_accel_path "<Actions>/ThunarWindow/preferences" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/zoom-in-alt1" "<Primary>plus")
 ; (gtk_accel_path "<Actions>/ThunarWindow/switch-previous-tab" "<Primary>Page_Up")
-; (gtk_accel_path "<Actions>/ThunarStandardView/sort-by-type" "")
+; (gtk_accel_path "<Actions>/ThunarBookmarks/43136ee190361dd356a41e370e62d218" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/arrange-items-menu" "")
 ; (gtk_accel_path "<Actions>/ThunarBookmarks/6c92f7dfb8c39b9537145fdeee74a2ca" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/view-location-selector-menu" "")
@@ -72,9 +73,9 @@
 ; (gtk_accel_path "<Actions>/ThunarWindow/close-all-windows" "<Primary><Shift>w")
 ; (gtk_accel_path "<Actions>/ThunarWindow/open-trash" "")
 ; (gtk_accel_path "<Actions>/ThunarLauncher/restore" "")
-; (gtk_accel_path "<Actions>/ThunarBookmarks/43136ee190361dd356a41e370e62d218" "")
-; (gtk_accel_path "<Actions>/ThunarWindow/open-desktop" "")
 ; (gtk_accel_path "<Actions>/ThunarBookmarks/7e831539067e695d4a27a2a6f4931df5" "")
+; (gtk_accel_path "<Actions>/ThunarWindow/open-desktop" "")
+; (gtk_accel_path "<Actions>/ThunarBookmarks/aee04b2d4cb5e767ab1e55e79aecfa5a" "")
 ; (gtk_accel_path "<Actions>/ThunarBookmarks/79c346bf457d9d236ca28a4fc7d6e93e" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/create-folder" "<Primary><Shift>n")
 ; (gtk_accel_path "<Actions>/ThunarWindow/open-location" "<Primary>l")

@@ -5,7 +5,7 @@
 #   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 # fi
 
-export PATH=~/.scripts:~/.local/bin:$PATH
+export PATH=~/.scripts:~/.local/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:$PATH
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
