@@ -6,6 +6,7 @@
 # fi
 
 export PATH=~/.scripts:~/.local/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:$PATH
+export QT_QPA_PLATFORMTHEME=qt5ct
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 

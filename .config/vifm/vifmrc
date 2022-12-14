@@ -525,7 +525,7 @@ nnoremap <c-u> <c-w>x
 " Open drag dialog for current file under cursor
 nnoremap <c-d> :!dragon -a -x -T %f<cr>
 " Open dialog to drag a file into vifm
-nnoremap <a-d> :!dragon -t -x -T %a<cr>
+nnoremap <a-d> :!dragon -t -x -T %c<cr>
 
 " ------------------------------------------------------------------------------
 

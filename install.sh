@@ -12,12 +12,12 @@ sudo zypper rr skype-stable
 sudo plymouth-set-default-theme -R bgrt
 
 # add upstream to rofi-network-manager fork
-cd .config/polybar/scripts/rofi-network-manager
+cd .config/polybar/scripts/rofi-network-manager || { echo "Error: Directory not found!"; exit 1; }
 git remote add upstream https://github.com/P3rf/rofi-network-manager.git
 
 # Install Apps
 # removed -y flag because it doesn't work on this command for some reason
-sudo zypper in ark gwenview gimp thunderbird clamtk bleachbit flameshot virt-manager musescore qbittorrent steam tor syncthing flatpak neofetch VirtualGL git pavucontrol skanlite kitty vifm cbonsai imagewriter zsh vim vim-data ImageMagick opi firewalld gpick darktable font-manager rofi thunar polybar brightnessctl dunst i3lock canberra-gtk-play redshift lxappearance qrencode man sxhkd feh kitty xclip lsd udiskie udisks2 usbutils inkscape nmcli-dmenu neovim btop macchanger bspwm sound-theme-freedesktop ncmpcpp mpd calcurse fzf npm vlc libreoffice libreoffice-draw libreoffice-gtk3 tumbler cava xdg-desktop-portal-gtk xautolock gcc-c++
+sudo zypper in ark gwenview gimp thunderbird clamtk bleachbit flameshot virt-manager musescore qbittorrent steam tor syncthing flatpak neofetch VirtualGL git pavucontrol skanlite kitty vifm cbonsai imagewriter zsh vim vim-data ImageMagick opi firewalld gpick darktable font-manager rofi thunar polybar brightnessctl dunst i3lock canberra-gtk-play redshift lxappearance qrencode man sxhkd feh kitty xclip lsd udiskie udisks2 usbutils inkscape nmcli-dmenu neovim btop macchanger bspwm sound-theme-freedesktop ncmpcpp mpd calcurse fzf npm vlc libreoffice libreoffice-draw libreoffice-gtk3 tumbler cava xdg-desktop-portal-gtk xautolock gcc-c++ cargo qt5ct
 
 # OBS apps
 opi cmatrix
@@ -38,7 +38,7 @@ rm -r ~/.config/kitty
 ln -s -r -f .config/* $HOME/.config/
 
 # ncmpcpp, zshrc, p10k, .scripts, .xinitrc, .Xresources, Pictures
-# cp -a -v \~/. $HOME 
+# cp -a -v \~/. $HOME
 rm -r $HOME/Pictures
 ln -s -r -f \~/.* $HOME
 ln -s -r -f \~/* $HOME
@@ -89,7 +89,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git
 #echo "source ~/.zsh-plugs/powerlevel10k/powerlevel10k.zsh-theme" >> ${ZDOTDIR:-$HOME}/.zshrc
 
 ## autosuggestions
-git clone https://github.com/zsh-users/zsh-autosuggestions 
+git clone https://github.com/zsh-users/zsh-autosuggestions
 #echo "source ~/.zsh-plugs/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
 ## zsh-vi-mode (fix syntax highlighting fork by fbearoff)
@@ -144,4 +144,4 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 flatpak install flathub com.sindresorhus.Caprine org.onlyoffice.desktopeditors org.signal.Signal com.brave.Browser com.bitwarden.desktop com.usebottles.bottles com.vscodium.codium net.cozic.joplin_desktop io.freetubeapp.FreeTube org.mozilla.firefox flatseal flatpak install flathub com.obsproject.Studio io.dbeaver.DBeaverCommunity
 
 sudo flatpak override --filesystem=$HOME/.themes
-sudo flatpak override --env=GTK_THEME=Colloid-Dark 
+sudo flatpak override --env=GTK_THEME=Colloid-Dark
