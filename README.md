@@ -15,14 +15,14 @@ Here's information about my setup:
 - **File Manager:** [thunar](https://github.com/xfce-mirror/thunar)
 - **Application Launcher:** [rofi](https://github.com/davatorium/rofi)
 
-### 🌟 <samp>DEMO</samp>
+<h2 align="center"> 🌟 <samp>DEMO</samp> </h2>
 
 <p align="center">
-  <img src="git_assets/demo.gif" alt="Rice Demo Gif" width="480px">
-  <img src="git_assets/demo_ss.png" alt="Rice Demo Screenshot" width="480px">
+  <img src="git_assets/demo.gif" alt="Rice Demo Gif" width="400px">
+  <img src="git_assets/demo_ss.png" alt="Rice Demo Screenshot" width="400px">
 </p>
 
-## 🪛 <samp>Installation</samp>
+## 🪛 <samp>INSTALLATION</samp>
 
 Take note that I've only tested installation on Gecko Linux Barebones on a laptop. Use at your own risk!
 
@@ -32,7 +32,7 @@ Take note that I've only tested installation on Gecko Linux Barebones on a lapto
  ./install.sh
 ```
 
-## 🐧 <samp>Todo</samp>
+## 🐧 <samp>TODO</samp>
 
 - Add more info on GTK, Cursor Theme, Fonts, Color Scheme
 
