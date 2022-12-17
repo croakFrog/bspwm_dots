@@ -1,4 +1,4 @@
-# 📕 MY DOTFILES REPO
+## 📕 <samp>MY DOTFILES REPO</samp>
 
 Hello and welcome to my humble repo. I started ricing just a few months ago and decided that my dotfiles needed a home.
 
@@ -15,12 +15,14 @@ Here's information about my setup:
 - **File Manager:** [thunar](https://github.com/xfce-mirror/thunar)
 - **Application Launcher:** [rofi](https://github.com/davatorium/rofi)
 
-## 🌟 DEMO
+### 🌟 <samp>DEMO</samp>
 
-<img src="git_assets/demo.gif" alt="Rice Demo Gif" width="480px">
-<img src="git_assets/demo_ss.png" alt="Rice Demo Screenshot" width="480px">
+<p align="center">
+  <img src="git_assets/demo.gif" alt="Rice Demo Gif" width="480px">
+  <img src="git_assets/demo_ss.png" alt="Rice Demo Screenshot" width="480px">
+</p>
 
-# 🪛 Installation
+## 🪛 <samp>Installation</samp>
 
 Take note that I've only tested installation on Gecko Linux Barebones on a laptop. Use at your own risk!
 
@@ -30,10 +32,10 @@ Take note that I've only tested installation on Gecko Linux Barebones on a lapto
  ./install.sh
 ```
 
-# 🐧 Todo
+## 🐧 <samp>Todo</samp>
 
 - Add more info on GTK, Cursor Theme, Fonts, Color Scheme
 
-#  CREDITS
+## 🙌 <samp>CREDITS</samp>
 
 My dotfiles are inspired by multiple sources, I would like to thank them once I compile the list. Coming soon.
