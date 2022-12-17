@@ -9,7 +9,7 @@ redshift -l 24:121 -t 6500:3200 &
 picom --animations --experimental-backend --config ~/.config/picom.conf --xrender-sync-fence &
 setxkbmap -option grp:win_space_toggle us,es &
 udiskie -A -n -T &
-xautolock -locker i3lock -time 30 -notify 10 -notifier dunst &
+xautolock -locker i3lock -time 10 -notify 10 -notifier dunst &
 dunstify -a "dunstIgnore" "Welcome back!" &
 
 bspc monitor -d I II III IV V VI VII
@@ -23,7 +23,7 @@ bspc config focus_follows_pointer true
 bspc config paddingless_monocle true
 bspc config single_monocle false
 bspc config active_border_color \#1C2325
- 
+
 bspc rule -a Gimp state=floating follow=on
 bspc rule -a Screenkey manage=off
 bspc rule -a Lxappearance state=floating

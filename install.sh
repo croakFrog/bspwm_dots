@@ -17,7 +17,7 @@ git remote add upstream https://github.com/P3rf/rofi-network-manager.git
 
 # Install Apps
 # removed -y flag because it doesn't work on this command for some reason
-sudo zypper in ark gwenview gimp thunderbird clamtk bleachbit flameshot virt-manager musescore qbittorrent steam tor syncthing flatpak neofetch VirtualGL git pavucontrol skanlite kitty vifm cbonsai imagewriter zsh vim vim-data ImageMagick opi firewalld gpick darktable font-manager rofi thunar polybar brightnessctl dunst i3lock canberra-gtk-play redshift lxappearance qrencode man sxhkd feh kitty xclip lsd udiskie udisks2 usbutils inkscape nmcli-dmenu neovim btop macchanger bspwm sound-theme-freedesktop ncmpcpp mpd calcurse fzf npm vlc libreoffice libreoffice-draw libreoffice-gtk3 tumbler cava xdg-desktop-portal-gtk xautolock gcc-c++ cargo qt5ct
+sudo zypper in ark gimp thunderbird clamtk bleachbit flameshot virt-manager musescore qbittorrent steam tor syncthing flatpak neofetch VirtualGL git pavucontrol skanlite kitty vifm cbonsai imagewriter zsh vim vim-data ImageMagick opi firewalld gpick darktable font-manager rofi thunar polybar brightnessctl dunst i3lock canberra-gtk-play redshift lxappearance qrencode man sxhkd feh kitty xclip lsd udiskie udisks2 usbutils inkscape nmcli-dmenu neovim btop macchanger bspwm sound-theme-freedesktop ncmpcpp mpd calcurse fzf npm vlc libreoffice libreoffice-draw libreoffice-gtk3 tumbler cava xdg-desktop-portal-gtk xautolock gcc-c++ cargo qt5ct google-noto-coloremoji-fonts
 
 # OBS apps
 opi cmatrix
