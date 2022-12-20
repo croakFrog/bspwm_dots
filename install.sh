@@ -2,6 +2,7 @@
 
 # NOT YET THOROUGHLY TESTED, USE AT YOUR OWN RISK
 # TESTED ON GECKOLINUX BAREBONES ON BARE METAL
+# WARNING: ONLY MEANT FOR FRESH INSTALLS
 
 # Repository
 sudo zypper rr Google-chrome
@@ -32,8 +33,8 @@ mkdir .config
 mkdir .rdmclones
 
 # bspwm, cava, dunst, kitty, neofetch, nvim, polybar, rofi, sxhkd, vifm, picom configs
-cd -
 # cp -a -v .config/. $HOME/.config/
+cd - # go back to dots directory
 rm -r ~/.config/kitty
 ln -s -r -f .config/* $HOME/.config/
 
@@ -45,7 +46,7 @@ ln -s -r -f \~/* $HOME
 
 # cursors
 sudo mkdir /usr/share/icons/Skyrim-cursors
-cd usr_share_icons/
+cd usr_share_icons/ || { echo "Error: Directory not found!"; exit 1; }
 7za x Skyrim-by-ru5tyshark-cursors.7z
 sudo cp cursor.theme /usr/share/icons/Skyrim-cursors/
 sudo cp -r cursors /usr/share/icons/Skyrim-cursors/
@@ -73,7 +74,6 @@ cp ~/.rdmclones/Dejavu/DejaVuSansMono-wifi-ramp.ttf ~/.fonts
 cp fonts/JetBrains\ Mono\ Regular\ Nerd\ Font\ Complete\ Mono.ttf $HOME/.fonts
 
 # Jetbrains Mono, Poppins
-# INSTALL JETBRAINS MONO NF FROM FONTS FOLDER
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
 sudo zypper in -y google-poppins-fonts
 
@@ -82,9 +82,8 @@ sudo zypper in -y fetchmsttfonts
 
 # ZSH
 ## powerlevel10k
-cd $HOME
-mkdir .zsh-plugs
-cd .zsh-plugs
+mkdir ~/.zsh-plugs
+cd ~/.zsh-plugs
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git
 #echo "source ~/.zsh-plugs/powerlevel10k/powerlevel10k.zsh-theme" >> ${ZDOTDIR:-$HOME}/.zshrc
 
@@ -125,8 +124,7 @@ git clone https://github.com/vinceliuice/Colloid-icon-theme.git ~/.rdmclones/Col
 cd ~/.rdmclones/Colloid-icon
 ./install.sh
 
-# For BSPWM:
-# For picom jonaburg
+# For picom dccsillag
 sudo zypper in meson xcb-util-image-devel xcb-util-renderutil-devel libev-devel xcb-util-devel xcb-util-keysyms-devel xcb-util-wm-devel alsa-lib-devel libpixman-1-0-devel uthash-devel libconfig++-devel pcre-devel dbus-1-devel gcc cmake xorg-x11-devel
 git clone https://github.com/dccsillag/picom ~/.rdmclones/picom
 cd ~/.rdmclones/picom
@@ -145,3 +143,6 @@ flatpak install flathub com.sindresorhus.Caprine org.onlyoffice.desktopeditors o
 
 sudo flatpak override --filesystem=$HOME/.themes
 sudo flatpak override --env=GTK_THEME=Colloid-Dark
+
+# change shell to zsh
+chsh -s $(which zsh)

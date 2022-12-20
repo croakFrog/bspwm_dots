@@ -24,7 +24,7 @@ Here's information about my setup:
 
 ## 🪛 <samp>INSTALLATION</samp>
 
-Take note that I've only tested installation on Gecko Linux Barebones on a laptop. Use at your own risk!
+Take note that I've only tested installation on Gecko Linux Barebones on a laptop. Only meant for fresh installs, use at your own risk!
 
 ```sh
  git clone --recurse-submodules https://github.com/croakFrog/bspwm_dots.git
@@ -38,7 +38,7 @@ Take note that I've only tested installation on Gecko Linux Barebones on a lapto
   <details>
     <summary><strong>GTK and Icon Theme</strong></summary>
 
-    > The repo for the <strong>Colloid GTK Theme</strong> can be found [here](https://github.com/vinceliuice/Colloid-gtk-theme). The GTK theme is already installed if you used the install script. You can enable it by using <strong>lxappearance</strong>.
+  > The repo for the <strong>Colloid GTK Theme</strong> can be found [here](https://github.com/vinceliuice/Colloid-gtk-theme). The GTK theme is already installed if you used the install script. You can enable it by using <strong>lxappearance</strong>.
 
     <img src="git_assets/gtk_icon_demo.png" alt="GTK Icon Demo" width="">
     
@@ -48,20 +48,29 @@ Take note that I've only tested installation on Gecko Linux Barebones on a lapto
   <details>
     <summary><strong>Cursor Theme</strong></summary>
 
-    > Coming soon
+  > Coming soon
 
   </details>
 
   <details>
     <summary><strong>Fonts</strong></summary>
 
-    > Coming soon
+  > Coming soon
+
   </details>
 
   <details>
     <summary><strong>Color Scheme</strong></summary>
 
-    > Coming soon
+  > Coming soon
+
+  </details>
+
+  <details>
+    <summary><strong>Firefox CSS & Startpage</strong></summary>
+
+  > Coming soon
+
   </details>
 
 ## 🙌 <samp>CREDITS</samp>
@@ -78,7 +87,7 @@ My dotfiles are inspired by multiple sources <font size=1><i>some just yoinked o
 
 - **Dcssillag:** [Picom](https://github.com/dccsillag/picom)
 
-- **Janleigh:** [Dunst and NCMPP Config](https://github.com/janleigh) <font size=1> also inspired the layout of this repo</font>
+- **Janleigh:** [Dunst and NCMPCPP Config](https://github.com/janleigh) <font size=1> also inspired the layout of this repo</font>
 
 - **Molecule47/Fluffy47:** [Firefox Startpage](https://github.com/molecule47/idyllic-firefox)
 
