@@ -21,7 +21,7 @@ Here's information about my setup:
 
 <p align="center">
   <img src="git_assets/demo_ss.png" alt="Rice Demo Screenshot" width="">
-  <img src="git_assets/demo.gif" alt="Rice Demo Gif" width="700">
+  <img src="git_assets/demo.gif" alt="Rice Demo Gif" width="800"><br/>
   <sub><sup><i>Wallpapers also included!</i></sup></sub>
 </p>
 
