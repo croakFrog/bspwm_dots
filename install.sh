@@ -9,9 +9,6 @@ sudo zypper rr Google-chrome
 sudo zypper rr Google-talkplugin
 sudo zypper rr skype-stable
 
-# enable theme for LUKS
-sudo plymouth-set-default-theme -R bgrt
-
 # add upstream to rofi-network-manager fork
 cd .config/polybar/scripts/rofi-network-manager || { echo "Error: Directory not found!"; exit 1; }
 git remote add upstream https://github.com/P3rf/rofi-network-manager.git
@@ -43,6 +40,17 @@ ln -s -r -f .config/* $HOME/.config/
 rm -r $HOME/Pictures
 ln -s -r -f \~/.* $HOME
 ln -s -r -f \~/* $HOME
+
+# plymouth theme
+sudo zypper in plymouth-plugin-script
+sudo cp -r plymouth/hexagon_dots /usr/share/plymouth/themes/
+sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/hexagon/hexagon_dots.plymouth 100
+sudo plymouth-set-default-theme hexagon_dots
+sudo mkinitrd
+
+# grub theme
+sudo cp -r plymouth/yorha-1920x1080 /boot/grub2/themes/ # Activate the theme on YaST
+# or edit your /etc/default/grub file to include GRUB_THEME="/boot/grub/themes/yorha-1920x1080/theme.txt"
 
 # cursors
 sudo mkdir /usr/share/icons/Skyrim-cursors
@@ -139,7 +147,7 @@ sudo ninja -C build install
 # flatpak (might take a while to install everything, grab a coffee while this is going)
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-flatpak install flathub com.sindresorhus.Caprine org.onlyoffice.desktopeditors org.signal.Signal com.brave.Browser com.bitwarden.desktop com.usebottles.bottles com.vscodium.codium net.cozic.joplin_desktop io.freetubeapp.FreeTube org.mozilla.firefox flatseal flatpak install flathub com.obsproject.Studio io.dbeaver.DBeaverCommunity
+flatpak install flathub com.sindresorhus.Caprine org.onlyoffice.desktopeditors org.signal.Signal com.brave.Browser com.bitwarden.desktop com.usebottles.bottles com.vscodium.codium net.cozic.joplin_desktop io.freetubeapp.FreeTube org.mozilla.firefox flatseal flatpak install flathub com.obsproject.Studio io.dbeaver.DBeaverCommunity com.github.liferooter.textpieces
 
 sudo flatpak override --filesystem=$HOME/.themes
 sudo flatpak override --env=GTK_THEME=Colloid-Dark

@@ -87,19 +87,21 @@ Take note that I've only tested installation on Gecko Linux Barebones on a lapto
 
 My dotfiles are inspired by multiple sources <sub><sup><i>some just yoinked outright</sup></sub></i>, I would like to thank these cool people for inspiring my rice for the following stuff:
 
-- **Adi1090x:** [Polybar](https://github.com/adi1090x/polybar-themes)
+- **Adi1090x:** [Polybar and Plymouth Theme](https://github.com/adi1090x/)
 
 - **AstroNvim Devs**: [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
 - **Andreasgrafen:** [Firefox CSS - Cascade](https://github.com/andreasgrafen/cascade)
 
-- **Chick2D:** [Neofetch](https://github.com/Chick2D/neofetch-themes/)
+- **Chick2D:** [Neofetch Theme](https://github.com/Chick2D/neofetch-themes/)
 
-- **Dccsillag:** [Picom](https://github.com/dccsillag/picom)
+- **Dccsillag:** [Picom Animations](https://github.com/dccsillag/picom)
 
 - **Janleigh:** [Dunst and NCMPCPP Config](https://github.com/janleigh) <sub><sup>also inspired the layout of this repo </sup></sub>
 
 - **Molecule47/Fluffy47:** [Firefox Startpage](https://github.com/molecule47/idyllic-firefox)
+
+- **OliveThePuffin:** [Yorha Grub Theme](https://github.com/OliveThePuffin/yorha-grub-theme)
 
 - **P3rf:** [Rofi-network-manager](https://github.com/P3rf/rofi-network-manager)
 
