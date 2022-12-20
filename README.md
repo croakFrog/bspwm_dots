@@ -12,14 +12,17 @@ Here's information about my setup:
 - **Editor:** [neovim](https://github.com/neovim/neovim)
 - **Browser:** [firefox](https://www.mozilla.org/en-US/firefox)
 - **Notification Daemon:** [dunst](https://github.com/dunst-project/dunst)
-- **File Manager:** [thunar](https://github.com/xfce-mirror/thunar)
+- **GUI File Manager:** [thunar](https://github.com/xfce-mirror/thunar)
+- **TUI File Manager:** [vifm](https://github.com/vifm/vifm)
 - **Application Launcher:** [rofi](https://github.com/davatorium/rofi)
+- **Music Visualizer:** [cava](https://github.com/karlstav/cava)
 
 <h2 align="center"> 🌟 <samp>DEMO</samp> </h2>
 
 <p align="center">
   <img src="git_assets/demo_ss.png" alt="Rice Demo Screenshot" width="">
   <img src="git_assets/demo.gif" alt="Rice Demo Gif" width="700">
+  <sub><sup><i>Wallpapers also included!</i></sup></sub>
 </p>
 
 ## 🪛 <samp>INSTALLATION</samp>
@@ -73,9 +76,16 @@ Take note that I've only tested installation on Gecko Linux Barebones on a lapto
 
   </details>
 
+  <details>
+    <summary><strong>Steam Theme</strong></summary>
+
+  > Coming soon
+
+  </details>
+
 ## 🙌 <samp>CREDITS</samp>
 
-My dotfiles are inspired by multiple sources <font size=1><i>some just yoinked outright</font></i>, I would like to thank these cool people for inspiring my rice for the following stuff:
+My dotfiles are inspired by multiple sources <sub><sup><i>some just yoinked outright</sup></sub></i>, I would like to thank these cool people for inspiring my rice for the following stuff:
 
 - **Adi1090x:** [Polybar](https://github.com/adi1090x/polybar-themes)
 
@@ -85,9 +95,9 @@ My dotfiles are inspired by multiple sources <font size=1><i>some just yoinked o
 
 - **Chick2D:** [Neofetch](https://github.com/Chick2D/neofetch-themes/)
 
-- **Dcssillag:** [Picom](https://github.com/dccsillag/picom)
+- **Dccsillag:** [Picom](https://github.com/dccsillag/picom)
 
-- **Janleigh:** [Dunst and NCMPCPP Config](https://github.com/janleigh) <font size=1> also inspired the layout of this repo</font>
+- **Janleigh:** [Dunst and NCMPCPP Config](https://github.com/janleigh) <sub><sup>also inspired the layout of this repo </sup></sub>
 
 - **Molecule47/Fluffy47:** [Firefox Startpage](https://github.com/molecule47/idyllic-firefox)
 
