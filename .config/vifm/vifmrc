@@ -226,6 +226,8 @@ filextype {*.html,*.htm},<text/html>
         \ flatpak run com.brave.Browser %f &,
         \ {Open with firefox}
         \ flatpak run org.mozilla.firefox %f &,
+        \ {Open with VSCodium}
+        \ flatpak run com.vscodium.codium %f &,
         \ {Open with nvim}
         \ nvim %f &,
 filetype {*.html,*.htm},<text/html> links, lynx
