@@ -27,7 +27,7 @@ terminal-height: "100%"
     font = "Comfortaa Bold 24"
     color = "#dadada"
     align = "left"
-    text = "- BOOTING SYSTEM . . ."
+    text = " - BOOTING SYSTEM . . ."
 }
 
 + boot_menu {
