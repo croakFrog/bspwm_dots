@@ -52,7 +52,7 @@ theme[proc_box]="#40454f"
 theme[div_line]="#595647"
 
 # Temperature graph colors
-theme[temp_start]="#56b6c2"
+theme[temp_start]="#039be5"
 theme[temp_mid]="#40454f"
 theme[temp_end]="#ff7c81"
 
@@ -63,30 +63,30 @@ theme[cpu_end]="#ff7c81"
 
 # Mem/Disk free meter
 theme[free_start]="#40454f"
-theme[free_mid]="#89b06d"
-theme[free_end]="#a3cb86"
+theme[free_mid]="#039be5"
+theme[free_end]="#41b4ff"
 
 # Mem/Disk cached meter
 theme[cached_start]="#40454f"
-theme[cached_mid]="#56b6c2"
-theme[cached_end]="#74d3df"
+theme[cached_mid]="#039be5"
+theme[cached_end]="#41b4ff"
 
 # Mem/Disk available meter
 theme[available_start]="#40454f"
-theme[available_mid]="#ebae34"
-theme[available_end]="#ffc84f"
+theme[available_mid]="#039be5"
+theme[available_end]="#41b4ff"
 
 # Mem/Disk used meter
 theme[used_start]="#40454f"
-theme[used_mid]="#ec5f67"
-theme[used_end]="#ff7c81"
+theme[used_mid]="#039be5"
+theme[used_end]="#41b4ff"
 
 # Download graph colors
-theme[download_start]="#2A2F39"
-theme[download_mid]="#c678dd"
-theme[download_end]="#e393fa"
+theme[download_start]="#40454f"
+theme[download_mid]="#039be5"
+theme[download_end]="#41b4ff"
 
 # Upload graph colors
-theme[upload_start]="#570d33"
-theme[upload_mid]="#ec5f67"
-theme[upload_end]="#ff7c81"
+theme[upload_start]="#40454f"
+theme[upload_mid]="#c678dd"
+theme[upload_end]="#e393fa"

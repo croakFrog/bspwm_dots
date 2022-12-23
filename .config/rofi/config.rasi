@@ -1,4 +1,4 @@
-@theme "~/.config/rofi/colors/black_cool.rasi"
+@theme "~/.config/rofi/colors/ribbit-dark.rasi"
 
 configuration {
 	terminal: "kitty";
