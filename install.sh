@@ -15,7 +15,7 @@ git remote add upstream https://github.com/P3rf/rofi-network-manager.git
 
 # _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-# INSTALL SOFTWARE
+# INSTALL PACKAGES
 # Non-negotiables
 sudo zypper in -y bspwm dunst feh git i3lock kitty lxappearance polybar qt5ct sxhkd thunar vifm xautolock xclip
 
@@ -29,14 +29,15 @@ sudo zypper in -y ark cava gimp inkscape libreoffice libreoffice-draw mpd ncmpcp
 sudo zypper in -y cargo gcc gcc-c++
 
 # Extras
-sudo zypper in -y bleachbit cbonsai fzf gpick imagewriter lsd macchanger man musescore neofetch pavucontrol steam tor udiskie udisks2 virt-manager zsh
+sudo zypper in -y bleachbit cbonsai fzf colorpicker imagewriter lsd macchanger man musescore neofetch pavucontrol steam tor udiskie udisks2 virt-manager zsh
 
 # Random Dependencies
 sudo zypper in -y brightnessctl canberra-gtk-play ImageMagick libreoffice-gtk3 nmcli_dmenu npm qrencode sound-theme-freedesktop tumbler usbutils VirtualGL xdg-desktop-portal-gtk
 
-# OBS apps
+# OBS Packages
 opi cmatrix
 opi fceux
+opi signal-desktop
 
 # fix for Davinci Resolve audio
 sudo zypper in -y alsa-plugins-pulse
@@ -195,8 +196,8 @@ flatpak install --assumeyes flathub org.onlyoffice.desktopeditors com.vscodium.c
 # Browser (Brave, Firefox)
 flatpak install --assumeyes flathub com.brave.Browser org.mozilla.firefox
 
-# Social (Messenger client, Signal)
-flatpak install --assumeyes flathub com.sindresorhus.Caprine org.signal.Signal
+# Social (Messenger client)
+flatpak install --assumeyes flathub com.sindresorhus.Caprine
 
 # Password Manager (Bitwarden)
 flatpak install --assumeyes flathub com.bitwarden.desktop
