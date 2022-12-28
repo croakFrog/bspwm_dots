@@ -6,7 +6,7 @@ feh --randomize --bg-scale --no-fehbg ~/Pictures/Anime_Dark &
 polybar &
 dunst &
 redshift -l 24:121 -t 6500:3200 &
-picom --animations --experimental-backend --config ~/.config/picom.conf --xrender-sync-fence &
+picom --animations --experimental-backend --config ~/.config/picom.conf --xrender-sync-fence --unredir-if-possible &
 setxkbmap -option grp:win_space_toggle us,es &
 udiskie -A -n -T &
 xautolock -locker i3lock -time 10 -notify 10 -notifier dunst &

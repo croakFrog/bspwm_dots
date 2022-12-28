@@ -72,6 +72,7 @@ sudo mkinitrd
 
 # grub theme
 sudo cp -r plymouth/yorha-1920x1080 /boot/grub2/themes/ # Activate the theme on YaST
+sudo mkinitrd
 # or edit your /etc/default/grub file to include GRUB_THEME="/boot/grub/themes/yorha-1920x1080/theme.txt"
 
 # _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
