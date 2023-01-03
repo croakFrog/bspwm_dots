@@ -189,6 +189,13 @@ sudo ninja -C build install
 # meson setup --wipe . build
 # ninja -C build install
 
+# MPC (because mpc doesn't work for some reason when mpd is install with just zypper)
+git clone https://github.com/MusicPlayerDaemon/mpc.git ~/.rdmclones/mpc
+cd ~/.rdmclones/mpc
+meson . output
+ninja -C output
+sudo ninja -C output install
+
 # _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 # FLATPAK STUFF (might take a while to install everything, grab a coffee while this is going)
