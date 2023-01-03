@@ -27,7 +27,7 @@ Here's information about my setup:
 
 ## 🪛 <samp>INSTALLATION</samp>
 
-Take note that I've only tested installation on Gecko Linux Barebones on a laptop. Only meant for fresh installs, use at your own risk!
+Take note that I've only tested installation on Gecko Linux Barebones on a laptop (1920x1080 & 1600x900). Only meant for fresh installs, use at your own risk!
 
 ```sh
  git clone --recurse-submodules https://github.com/croakFrog/bspwm_dots.git

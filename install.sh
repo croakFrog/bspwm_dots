@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # NOT YET THOROUGHLY TESTED, USE AT YOUR OWN RISK
-# TESTED ON GECKOLINUX BAREBONES ON BARE METAL
+# TESTED ON GECKOLINUX BAREBONES ON BARE METAL (HP Laptop (1920x1080) and T430 Thinkpad (1600x900))
 # WARNING: ONLY MEANT FOR FRESH INSTALLS
 
 # Repository
@@ -9,8 +9,14 @@ sudo zypper rr Google-chrome
 sudo zypper rr Google-talkplugin
 sudo zypper rr skype-stable
 
+# update system
+# sudo zypper dup
+
+# Remove unnecessary apps
+sudo zypper rm firefox sax3 urxvt-unicode
+
 # add upstream to rofi-network-manager fork
-cd .config/polybar/scripts/rofi-network-manager || { echo "Error: Directory not found!"; exit 1; }
+cd .config/polybar/scripts/rofi-network-manager
 git remote add upstream https://github.com/P3rf/rofi-network-manager.git
 
 # _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
@@ -29,7 +35,7 @@ sudo zypper in -y ark cava gimp inkscape libreoffice libreoffice-draw mpd ncmpcp
 sudo zypper in -y cargo gcc gcc-c++
 
 # Extras
-sudo zypper in -y bleachbit cbonsai fzf colorpicker imagewriter lsd macchanger man musescore neofetch pavucontrol steam tor udiskie udisks2 virt-manager zsh
+sudo zypper in -y bleachbit cbonsai fzf colorpicker imagewriter lsd macchanger man musescore neofetch pavucontrol steam tor udiskie udisks2 virt-manager zsh screenkey
 
 # Random Dependencies
 sudo zypper in -y brightnessctl canberra-gtk-play ImageMagick libreoffice-gtk3 nmcli_dmenu npm qrencode sound-theme-freedesktop tumbler usbutils VirtualGL xdg-desktop-portal-gtk
@@ -68,7 +74,6 @@ sudo zypper in -y plymouth-plugin-script
 sudo cp -r plymouth/hexagon_dots /usr/share/plymouth/themes/
 sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/hexagon/hexagon_dots.plymouth 100
 sudo plymouth-set-default-theme hexagon_dots
-sudo mkinitrd
 
 # grub theme
 sudo cp -r plymouth/yorha-1920x1080 /boot/grub2/themes/ # Activate the theme on YaST
@@ -79,7 +84,7 @@ sudo mkinitrd
 
 # cursors
 sudo mkdir /usr/share/icons/Skyrim-cursors
-cd usr_share_icons/ || { echo "Error: Directory not found!"; exit 1; }
+cd usr_share_icons/
 7za x Skyrim-by-ru5tyshark-cursors.7z
 sudo cp cursor.theme /usr/share/icons/Skyrim-cursors/
 sudo cp -r cursors /usr/share/icons/Skyrim-cursors/
